@@ -37,7 +37,7 @@ export default function Navbar() {
                     className="flex items-center gap-2"
                 >
                     <img
-                        src="/assets/instashiny-logo.png"
+                        src="/logo.png"
                         alt="InstaShiny — Pickup in Minutes, Delivered in Hours"
                         className="h-12 md:h-14 w-auto"
                         style={{
