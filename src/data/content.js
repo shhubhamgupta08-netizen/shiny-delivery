@@ -12,19 +12,31 @@ export const SERVICES = [
   {
     name: "Wash & Fold",
     price: "₹69/kg",
-    desc: "Fresh wash, fold and next-day delivery.",
+    desc: "Fresh, clean and folded",
     image: "/wash-fold.jpg"
+  },
+  {
+    name: "Wash & Iron",
+    price: "₹99/kg",
+    desc: "Clean, pressed & ready to wear",
+    image: "/wash-iron.jpg"
   },
   {
     name: "Dry Cleaning",
     price: "Starting ₹99/item",
-    desc: "Premium dry cleaning for delicate garments.",
-    image: "/dry-clean.jpg"
+    desc: "Premium care for delicate clothing",
+    image: "/dry-cleaning.jpg"
   },
   {
-    name: "Steam Ironing",
+    name: "Shoes Cleaning",
+    price: "₹249/pair",
+    desc: "Clean, restore & refresh footwear",
+    image: "/shoes-cleaning.jpg"
+  },
+  {
+    name: "Steam Iron",
     price: "₹69/kg",
-    desc: "Crisp wrinkle-free ironing for daily wear.",
+    desc: "Crisp, wrinkle-free perfection",
     image: "/steam-iron.jpg"
   }
 ];
