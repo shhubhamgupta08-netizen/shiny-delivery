@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Plus, X } from 'lucide-react';
 
+const CustomClockApp = () => {
   const [customZones, setCustomZones] = useState([]);
   const [newZoneName, setNewZoneName] = useState('');
   const [newZoneTz, setNewZoneTz] = useState('');
