@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { BRAND, whatsappLink } from "../data/content";
+import { whatsappLink } from "../data/content";
 
 const NAV_LINKS = [
     { label: "Home", href: "#home" },
