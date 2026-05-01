@@ -32,13 +32,25 @@ export default function Navbar() {
         >
             <div className="container-x flex items-center justify-between px-4 md:px-10 py-4 min-h-[76px]">
                 <a
-                    href="#home"
-                    data-testid="navbar-logo"
-                    className="flex items-center gap-2"
-                >
-                    <img
-                        src="/logo.png"
-                        alt="InstaShiny — Pickup in Minutes, Delivered in Hours"
+  href="#home"
+  data-testid="navbar-logo"
+  className="flex items-center gap-3"
+>
+  <img
+    src="/logo.png"
+    alt="InstaShiny"
+    className="h-9 md:h-12 w-auto object-contain"
+  />
+
+  <div className="hidden sm:block leading-tight">
+    <h1 className="text-lg font-bold text-[#041C4A]">
+      InstaShiny
+    </h1>
+    <p className="text-xs text-gray-500">
+      Premium Laundry Care
+    </p>
+  </div>
+</a>
                         className="h-9 md:h-12 w-auto object-contain"
                         style={{
                             filter: scrolled ? "none" : "drop-shadow(0 2px 8px rgba(0,0,0,0.35))",
