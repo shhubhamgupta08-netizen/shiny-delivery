@@ -6,3 +6,95 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
+/* InstaShiny custom keyframes & helpers */
+.App {
+    text-align: left;
+    min-height: 100vh;
+    background: var(--is-bg, #F7FAFF);
+}
+
+/* Marquee for trusted strip */
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+.marquee-track {
+    animation: marquee 28s linear infinite;
+}
+
+@keyframes marquee-slow {
+    from { transform: translateX(0); }
+    to { transform: translateX(-33.333%); }
+}
+@keyframes marquee-reverse {
+    from { transform: translateX(-33.333%); }
+    to { transform: translateX(0); }
+}
+.marquee-track-slow {
+    animation: marquee-slow 60s linear infinite;
+    width: max-content;
+}
+.marquee-track-reverse {
+    animation: marquee-reverse 70s linear infinite;
+    width: max-content;
+}
+.marquee-track-slow:hover,
+.marquee-track-reverse:hover {
+    animation-play-state: paused;
+}
+
+/* Phone mockup tilt */
+.phone-tilt {
+    transform: perspective(1000px) rotateY(-8deg) rotateX(4deg);
+    transition: transform 0.5s ease;
+}
+.phone-tilt:hover {
+    transform: perspective(1000px) rotateY(0deg) rotateX(0deg);
+}
+
+/* Footer watermark — premium glowing shimmer */
+.footer-watermark {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 123, 255, 0.22) 0%,
+        rgba(91, 155, 255, 0.18) 35%,
+        rgba(0, 123, 255, 0.14) 70%,
+        rgba(4, 25, 45, 0.10) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(0, 123, 255, 0.14);
+    filter: drop-shadow(0 0 32px rgba(0, 123, 255, 0.22));
+    position: relative;
+}
+
+.footer-watermark::after {
+    content: "InstaShiny";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        110deg,
+        transparent 30%,
+        rgba(91, 155, 255, 0.38) 50%,
+        transparent 70%
+    );
+    background-size: 220% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    pointer-events: none;
+    animation: footer-shimmer 9s ease-in-out infinite;
+}
+
+@keyframes footer-shimmer {
+    0% { background-position: 220% 0; }
+    100% { background-position: -120% 0; }
+}
+
+@media (max-width: 640px) {
+    .footer-watermark {
+        filter: drop-shadow(0 0 16px rgba(0, 123, 255, 0.24));
+        -webkit-text-stroke-width: 0.5px;
+    }
+}
