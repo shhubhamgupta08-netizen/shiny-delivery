@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Trash2, Plus, X } from 'lucide-react';
+import { Plus, X } from 'lucide-react';
 
 const CustomClockApp = () => {
   const [customZones, setCustomZones] = useState([]);
