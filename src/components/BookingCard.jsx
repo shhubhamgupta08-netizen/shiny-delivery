@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { whatsappLink } from "../data/content";
 
 export default function BookingCard() {
     const [pickup, setPickup] = useState("today");
