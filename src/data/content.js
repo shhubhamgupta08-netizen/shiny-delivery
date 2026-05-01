@@ -9,9 +9,24 @@ export const whatsappLink = (message = "") => {
 };
 
 export const SERVICES = [
-  { name: "Wash & Fold" },
-  { name: "Dry Cleaning" },
-  { name: "Ironing" }
+  {
+    name: "Wash & Fold",
+    price: "₹69/kg",
+    desc: "Fresh wash, fold and next-day delivery.",
+    image: "/wash-fold.jpg"
+  },
+  {
+    name: "Dry Cleaning",
+    price: "Starting ₹99/item",
+    desc: "Premium dry cleaning for delicate garments.",
+    image: "/dry-clean.jpg"
+  },
+  {
+    name: "Steam Ironing",
+    price: "₹69/kg",
+    desc: "Crisp wrinkle-free ironing for daily wear.",
+    image: "/steam-iron.jpg"
+  }
 ];
 
 export const FEATURES = [
