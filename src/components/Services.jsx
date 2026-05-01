@@ -38,8 +38,12 @@ export default function Services() {
                         >
                             <div className="relative aspect-[4/3] overflow-hidden bg-[#F7FAFF]">
                                 <img
-                                    src={s.img}
-                                    alt={s.title}
+                                    <img
+  src={s.image}
+  alt={s.name}
+  loading="lazy"
+  className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
+/>
                                     loading="lazy"
                                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                                 />
