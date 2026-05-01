@@ -4,7 +4,7 @@ export const BRAND = {
 };
 
 export const whatsappLink = (message = "") => {
-  const phone = "1234567890";
+  const phone = "917065450490";
   return `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 };
 
@@ -55,13 +55,16 @@ export const FAQS = [
 ];
 
 export const TESTIMONIALS = [
-  { name: "Rahul", review: "Amazing service!" },
-  { name: "Priya", review: "Super convenient!" }
+  { name: "Rahul", review: "makes laundry completely hassle-free!" },
+  { name: "sonal", review: "Premium & trustworthy!" },
+  { name: "piyush", review: "young professional angle!" },
+  { name: "pawan", review: "Speed focused & great quality!" },
+  { name: "komal", review: "Highly recommend their shoe care service!" }
 ];
 
 export const METRICS = [
-  { label: "Happy Customers", value: "10K+" },
-  { label: "Orders Delivered", value: "50K+" }
+  { label: "Happy Customers", value: "500+" },
+  { label: "Orders Delivered", value: "1400+" }
 ];
 
 export const TRUST_LOGOS = [];
