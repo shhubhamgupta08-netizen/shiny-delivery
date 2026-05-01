@@ -45,10 +45,15 @@ export default function Services() {
   />
   <div className="absolute inset-0 bg-gradient-to-t from-[#041C4A]/35 via-transparent to-transparent"></div>
 </div>
-                                    loading="lazy"
-                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-t from-[#041C4A]/35 via-transparent to-transparent"></div>
+                                    <div className="relative h-56 overflow-hidden rounded-t-3xl">
+  <img
+    src={s.image}
+    alt={s.name}
+    loading="lazy"
+    className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
+  />
+  <div className="absolute inset-0 bg-gradient-to-t from-[#041C4A]/35 via-transparent to-transparent"></div>
+</div>
 
                                 {s.tag && (
                                     <span
