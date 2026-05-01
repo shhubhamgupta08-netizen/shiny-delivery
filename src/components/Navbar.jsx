@@ -30,7 +30,7 @@ export default function Navbar() {
                     : "glass-nav-transparent"
             }`}
         >
-            <div className="container-x flex items-center justify-between px-6 md:px-10 py-4">
+            <div className="container-x flex items-center justify-between px-4 md:px-10 py-4 min-h-[76px]">
                 <a
                     href="#home"
                     data-testid="navbar-logo"
@@ -39,7 +39,7 @@ export default function Navbar() {
                     <img
                         src="/logo.png"
                         alt="InstaShiny — Pickup in Minutes, Delivered in Hours"
-                        className="h-12 md:h-14 w-auto"
+                        className="h-9 md:h-12 w-auto object-contain"
                         style={{
                             filter: scrolled ? "none" : "drop-shadow(0 2px 8px rgba(0,0,0,0.35))",
                         }}
