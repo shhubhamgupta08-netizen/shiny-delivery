@@ -34,12 +34,12 @@ export default function Services() {
               data-testid={`service-card-${i}`}
               className="group relative flex flex-col bg-white rounded-[20px] overflow-hidden shadow-soft hover:shadow-lift transition-all duration-300 hover:-translate-y-1 border border-[#E2E8F0] hover:border-[#0A5BFF]/40 w-[calc(50%-10px)] sm:w-[calc(50%-14px)] md:w-[300px] lg:w-[340px]"
             >
-              <div className="relative h-56 overflow-hidden rounded-t-3xl">
+              <div className="relative aspect-[4/3] md:h-56 overflow-hidden rounded-t-3xl">
                 <img
                   src={s.image}
                   alt={s.name}
                   loading="lazy"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
+                  className="w-full h-full object-cover object-center group-hover:scale-105 transition-all duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#041C4A]/35 via-transparent to-transparent"></div>
 

@@ -83,14 +83,21 @@ export default function Hero() {
               Premium laundry care with instant pickup, live tracking and same-day delivery.
             </p>
 
-            <div className="mt-6 flex flex-wrap gap-4 item-center">
-              <a href="#how" className="btn-primary">
-                See How It Works
-              </a>
-              <a href="#services" className="btn-ghost-light">
-                View Pricing
-              </a>
-            </div>
+            <div className="mt-6 flex flex-wrap gap-4 items-center">
+  <a
+    href="#how"
+    className="px-6 py-3 rounded-full bg-white text-[#0B2A6B] font-semibold shadow-md"
+  >
+    See How It Works
+  </a>
+
+  <a
+    href="#services"
+    className="px-6 py-3 rounded-full border border-white/40 text-white font-semibold bg-white/10 backdrop-blur-md"
+  >
+    View Pricing
+  </a>
+</div>
 
             <div className="mt-8 flex flex-wrap gap-4 text-sm">
               <span>⭐ 4.9/5 Rating</span>
