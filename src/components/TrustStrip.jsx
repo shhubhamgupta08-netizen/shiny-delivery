@@ -22,14 +22,9 @@ function TestimonialCard({ t, accent }) {
                 className="text-sm md:text-base leading-relaxed mb-5"
                 style={{ color: "#041C4A" }}
             >
-                &ldquo;{t.quote}&rdquo;
+                &ldquo;{t.review}&rdquo;
             </p>
             <div className="flex items-center gap-3 pt-4 border-t border-[#E2E8F0]">
-                <img
-                    src={t.img}
-                    alt={t.name}
-                    className="w-10 h-10 rounded-full object-cover"
-                />
                 <div className="flex-1 min-w-0">
                     <p
                         className="font-display text-sm"
@@ -37,7 +32,7 @@ function TestimonialCard({ t, accent }) {
                     >
                         {t.name}
                     </p>
-                    <p className="text-xs text-[#4B5A78]">{t.role}</p>
+                    <p className="text-xs text-[#4B5A78]">Happy Customer</p>
                 </div>
                 <span className="text-[10px] font-bold text-[#0A5BFF] bg-[#F7FAFF] px-2 py-1 rounded-full whitespace-nowrap">
                     <i className="fa-solid fa-circle-check mr-1"></i>
