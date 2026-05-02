@@ -113,7 +113,12 @@ export const TESTIMONIALS = [
     review: "Speed focused and great quality cleaning.",
     rating: 5,
     verified: true
-  }
+  },
+  {
+    name: "swapnil",
+    review: "easy booking, reliable pickup & delivery!",
+    rating: 5,
+  },
 ];
 
 export const METRICS = [
