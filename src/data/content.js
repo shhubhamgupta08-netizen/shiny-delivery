@@ -96,15 +96,23 @@ export const TESTIMONIALS = [
     name: "Rahul",
     review: "InstaShiny makes laundry completely hassle-free!",
     rating: 5,
+    verified: true
   },
   {
     name: "Sonal",
     review: "Premium and trustworthy service in Gurugram.",
     rating: 5,
+    verified: true
   },
   {
     name: "Piyush",
     review: "Young professional team with fast service.",
+    rating: 5,
+    verified: true
+  },
+  {
+    name: "hemant",
+    review: "excellent services, courteous staff, light fasr delivery!",
     rating: 5,
     verified: true
   },
