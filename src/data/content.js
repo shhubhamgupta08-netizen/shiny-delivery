@@ -92,11 +92,30 @@ export const FAQS = [
 ];
 
 export const TESTIMONIALS = [
-  { name: "Rahul", review: "makes laundry completely hassle-free!" },
-  { name: "sonal", review: "Premium & trustworthy!" },
-  { name: "piyush", review: "young professional angle!" },
-  { name: "pawan", review: "Speed focused & great quality!" },
-  { name: "komal", review: "Highly recommend their shoe care service!" }
+  {
+    name: "Rahul",
+    review: "InstaShiny makes laundry completely hassle-free!",
+    rating: 5,
+    verified: true
+  },
+  {
+    name: "Sonal",
+    review: "Premium and trustworthy service in Gurugram.",
+    rating: 5,
+    verified: true
+  },
+  {
+    name: "Piyush",
+    review: "Young professional team with fast service.",
+    rating: 5,
+    verified: true
+  },
+  {
+    name: "komal",
+    review: "Speed focused and great quality cleaning.",
+    rating: 5,
+    verified: true
+  }
 ];
 
 export const METRICS = [
