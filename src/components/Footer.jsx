@@ -84,7 +84,7 @@ export default function Footer() {
                     {/* Brand */}
                     <div className="md:col-span-4 lg:col-span-5">
                         <img
-                            src="/logo.png"
+                            src="/logo.1png"
                             alt="InstaShiny"
                             className="h-16 md:h-20 w-auto"
                             data-testid="footer-logo"
