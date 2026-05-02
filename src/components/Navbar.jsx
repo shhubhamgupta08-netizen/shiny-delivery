@@ -51,10 +51,6 @@ export default function Navbar() {
     </p>
   </div>
 </a>
-                         scrolled ? "none" : "drop-shadow(0 2px 8px rgba(0,0,0,0.35))",
-                        }}
-                    />
-                </a>
 
                 <nav className="hidden lg:flex items-center gap-8">
                     {NAV_LINKS.map((l) => (
