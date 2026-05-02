@@ -42,9 +42,26 @@ export const SERVICES = [
 ];
 
 export const FEATURES = [
-  { title: "Fast Delivery", desc: "Quick turnaround time" },
-  { title: "Affordable", desc: "Best prices in market" },
-  { title: "Premium Quality", desc: "Top-notch cleaning" }
+  {
+    icon: "fa-truck-fast",
+    title: "Same-Day Delivery",
+    desc: "Order in the morning, get it back fresh by evening — across Gurugram."
+  },
+  {
+    icon: "fa-bolt",
+    title: "30-Min Pickup",
+    desc: "Schedule a pickup and our valet arrives at your doorstep within 30 minutes."
+  },
+  {
+    icon: "fa-shield-halved",
+    title: "No Hidden Charges",
+    desc: "Transparent per-kg and per-item pricing. What you see is what you pay."
+  },
+  {
+    icon: "fa-shirt",
+    title: "Premium Fabric Care",
+    desc: "Hypoallergenic detergents, individual processing, and white-glove finishing."
+  }
 ];
 
 export const FAQS = [
