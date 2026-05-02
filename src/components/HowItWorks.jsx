@@ -48,7 +48,7 @@ export default function HowItWorks() {
                                     ></i>
                                 </div>
                                 <span className="absolute -top-1 -right-1 w-8 h-8 rounded-full bg-[#FFD86B] border-2 border-white flex items-center justify-center font-display text-xs text-[#041C4A] shadow-md">
-                                    {parseInt(s.n, 10)}
+                                    {i + 1}
                                 </span>
                             </div>
                             <h3 className="font-display text-lg md:text-xl text-[#041C4A] mb-2 text-center lg:text-left">
