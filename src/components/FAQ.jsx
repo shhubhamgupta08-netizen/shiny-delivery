@@ -1,10 +1,10 @@
 import React from "react";
-// import {
-//     Accordion,
-//     AccordionContent,
-//     AccordionItem,
-//     AccordionTrigger,
-// } from "../components/ui/accordion";
+import {
+    Accordion,
+    AccordionContent,
+    AccordionItem,
+    AccordionTrigger,
+} from "../components/ui/accordion";
 import { FAQS } from "../data/content";
 
 export default function FAQ() {
@@ -19,27 +19,42 @@ export default function FAQ() {
                     <span className="text-xs font-semibold uppercase tracking-[0.18em] text-[#0A5BFF]">
                         FAQ
                     </span>
+
                     <h2 className="font-display text-3xl md:text-4xl lg:text-5xl mt-3 text-[#041C4A] leading-tight">
                         Questions, <br />
                         <span className="gradient-text">answered.</span>
                     </h2>
+
                     <p className="mt-5 text-[#4B5A78] max-w-sm">
                         Can&apos;t find what you&apos;re looking for? Our team replies in
                         minutes on WhatsApp.
                     </p>
                 </div>
 
-                <div className="space-y-4">
-  {FAQS.map((f, i) => (
-    <div
-      key={i}
-      className="bg-white border border-gray-200 rounded-xl p-4"
-    >
-      <h3 className="font-semibold text-lg">{f.question}</h3>
-      <p className="text-gray-600 mt-2">{f.answer}</p>
-    </div>
-  ))}
-</div>
+                <div className="lg:col-span-8">
+                    <Accordion
+                        type="single"
+                        collapsible
+                        defaultValue="item-0"
+                        className="space-y-4"
+                    >
+                        {FAQS.map((f, i) => (
+                            <AccordionItem
+                                key={i}
+                                value={item-${i}}
+                                className="bg-white border border-gray-200 rounded-2xl px-6"
+                            >
+                                <AccordionTrigger className="text-left font-semibold text-lg text-[#041C4A] py-6">
+                                    {f.question}
+                                </AccordionTrigger>
+
+                                <AccordionContent className="text-[#4B5A78] pb-6 text-base leading-7">
+                                    {f.answer}
+                                </AccordionContent>
+                            </AccordionItem>
+                        ))}
+                    </Accordion>
+                </div>
             </div>
         </section>
     );
