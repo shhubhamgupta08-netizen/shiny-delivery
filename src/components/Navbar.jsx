@@ -51,9 +51,7 @@ export default function Navbar() {
     </p>
   </div>
 </a>
-                        className="h-9 md:h-12 w-auto object-contain"
-                        style={{
-                            filter: scrolled ? "none" : "drop-shadow(0 2px 8px rgba(0,0,0,0.35))",
+                         scrolled ? "none" : "drop-shadow(0 2px 8px rgba(0,0,0,0.35))",
                         }}
                     />
                 </a>
