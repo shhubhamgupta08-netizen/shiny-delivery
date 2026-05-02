@@ -72,7 +72,24 @@ export const TRUST_LOGOS = [];
 export const DEFAULT_HERO_VIDEO = "";
 export const HERO_FALLBACK_IMAGE = "";
 export const STEPS = [
-  { title: "Schedule Pickup", desc: "Choose time & place" },
-  { title: "We Clean", desc: "Professional laundry service" },
-  { title: "Delivery", desc: "Get clothes at your doorstep" }
+  {
+    title: "Schedule Pickup",
+    desc: "Pick a slot via WhatsApp, app or website — takes 30 seconds.",
+    icon: "fa-calendar-check"
+  },
+  {
+    title: "We Pick It Up",
+    desc: "A uniformed valet collects your laundry from your door.",
+    icon: "fa-person-walking-luggage"
+  },
+  {
+    title: "Expert Cleaning",
+    desc: "Sorted, washed, dry-cleaned and pressed by trained specialists.",
+    icon: "fa-soap"
+  },
+  {
+    title: "Delivered Fresh",
+    desc: "Sealed, packed and delivered the same day.",
+    icon: "fa-box-open"
+  }
 ];
