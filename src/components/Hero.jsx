@@ -36,7 +36,7 @@ export default function Hero() {
     <section
       id="home"
       data-testid="hero-section"
-      className="relative min-h-screen w-full overflow-hidden flex items-center justify-center pt-40 md:pt-44"
+    className="relative min-h-[85vh] w-full overflow-hidden flex items-start justify-center pt-16 md:pt-20"
     >
       {videoUrl && (
         <video
@@ -83,7 +83,7 @@ export default function Hero() {
               Premium laundry care with instant pickup, live tracking and same-day delivery.
             </p>
 
-            <div className="mt-8 flex flex-wrap gap-4">
+            <div className="mt-6 flex flex-wrap gap-4 item-center">
               <a href="#how" className="btn-primary">
                 See How It Works
               </a>
