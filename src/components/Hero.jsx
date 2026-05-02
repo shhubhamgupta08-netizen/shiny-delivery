@@ -36,7 +36,7 @@ export default function Hero() {
     <section
       id="home"
       data-testid="hero-section"
-    className="relative min-h-[85vh] w-full overflow-hidden flex items-start justify-center pt-16 md:pt-20"
+    className="relative min-h-[75vh] md:min-h-[85vh] w-full overflow-hidden flex items-start justify-center pt-6 md:pt-12"
     >
       {videoUrl && (
         <video
