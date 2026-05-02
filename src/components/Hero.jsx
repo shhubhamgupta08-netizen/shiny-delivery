@@ -34,7 +34,7 @@ export default function Hero() {
         <section
             id="home"
             data-testid="hero-section"
-            className="relative min-h-screen w-full overflow-hidden flex items-center justify-center pt-28 md:pt-32"
+            className="relative min-h-screen w-full overflow-hidden flex items-center justify-center pt-40 md:pt-44"
         >
             {/* Video background — only renders if a videoUrl exists */}
             {videoUrl && (
