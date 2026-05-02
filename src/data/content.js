@@ -96,13 +96,11 @@ export const TESTIMONIALS = [
     name: "Rahul",
     review: "InstaShiny makes laundry completely hassle-free!",
     rating: 5,
-    verified: true
   },
   {
     name: "Sonal",
     review: "Premium and trustworthy service in Gurugram.",
     rating: 5,
-    verified: true
   },
   {
     name: "Piyush",
