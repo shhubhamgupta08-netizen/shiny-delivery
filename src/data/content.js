@@ -49,8 +49,28 @@ export const FEATURES = [
 
 export const FAQS = [
   {
-    question: "How does it work?",
-    answer: "We pick up, clean, and deliver your clothes."
+    question: "Which areas in Gurugram do you serve?",
+    answer: "We currently serve all major sectors across Gurugram with free pickup and delivery."
+  },
+  {
+    question: "How fast is the pickup once I book?",
+    answer: "Pickup usually happens within minutes depending on your location and slot availability."
+  },
+  {
+    question: "Is same-day delivery really possible?",
+    answer: "Yes, same-day delivery is available for selected services and time slots."
+  },
+  {
+    question: "How is pricing calculated?",
+    answer: "Pricing depends on service type like wash & fold, wash & iron, dry clean, or shoe care."
+  },
+  {
+    question: "Are my clothes processed separately?",
+    answer: "Yes, we ensure proper sorting and premium garment care standards."
+  },
+  {
+    question: "What if I'm not happy with the result?",
+    answer: "Contact us immediately and our support team will resolve the issue quickly."
   }
 ];
 
