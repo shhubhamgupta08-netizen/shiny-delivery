@@ -71,6 +71,41 @@ export default function Services() {
             </a>
           ))}
         </div>
+        
+        <div className="mt-16 pt-10 border-t border-gray-200">
+          <p className="text-center text-sm tracking-[0.2em] text-[#6B7280] font-semibold">
+             CERTIFIED & RECOGNIZED
+          </p>
+
+          <div className="flex flex-wrap justify-center gap-8 md:gap-10 mt-6 text-[#4B5A78]">
+
+            <span className="flex items-center gap-2 font-semibold text-sm md:text-base">
+              <i className="fa-solid fa-award text-[#D4A574] text-base"></i>
+              ISO 9001
+            </span>
+
+            <span className="flex items-center gap-2 font-semibold text-sm md:text-base">
+              <i className="fa-solid fa-shield-halved text-[#D4A574] text-base"></i>
+                MSME Registered
+            </span>
+
+            <span className="flex items-center gap-2 font-semibold text-sm md:text-base">
+              <i className="fa-solid fa-flag text-[#D4A574] text-base"></i>
+               Make in India
+            </span>
+
+            <span className="flex items-center gap-2 font-semibold text-sm md:text-base">
+             <i className="fa-solid fa-rocket text-[#D4A574] text-base"></i>
+              Startup India
+            </span>
+
+            <span className="flex items-center gap-2 font-semibold text-sm md:text-base">
+              <i className="fa-solid fa-star text-[#D4A574] text-base"></i>
+              Google Verified
+            </span>
+
+          </div>
+       </div>
       </div>
     </section>
   );
