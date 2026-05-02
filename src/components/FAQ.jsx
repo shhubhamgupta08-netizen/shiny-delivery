@@ -42,13 +42,13 @@ export default function FAQ() {
                             <AccordionItem
                                 key={i}
                                 value={item-${i}}
-                                className="bg-white border border-gray-200 rounded-2xl px-6"
+                                className="bg-white border border-gray-100 rounded-2xl px-6 shadow-sm hover:shadow-md transition-all duration-300"
                             >
-                                <AccordionTrigger className="text-left font-semibold text-lg text-[#041C4A] py-6">
+                                <AccordionTrigger className="text-left font-display font-semibold text-xl text-[#041C4A] py-6">
                                     {f.question}
                                 </AccordionTrigger>
 
-                                <AccordionContent className="text-[#4B5A78] pb-6 text-base leading-7">
+                                <AccordionContent className="text-[#4B5A78] pb-6 text-base leading-8">
                                     {f.answer}
                                 </AccordionContent>
                             </AccordionItem>
