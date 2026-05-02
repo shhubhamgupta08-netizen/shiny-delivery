@@ -100,8 +100,10 @@ export const TESTIMONIALS = [
 ];
 
 export const METRICS = [
-  { label: "Happy Customers", value: "500+" },
-  { label: "Orders Delivered", value: "1400+" }
+  { label: "ORDERS DELIVERED", value: "1,000+" },
+  { label: "GOOGLE RATING", value: "4.9 ⭐" },
+  { label: "AVG. PICKUP TIME", value: "30 Min" },
+  { label: "HAPPY CUSTOMERS", value: "98%" }
 ];
 
 export const TRUST_LOGOS = [];
