@@ -30,7 +30,7 @@ export default function Navbar() {
                     : "glass-nav-transparent"
             }`}
         >
-            <div className="container-x flex items-center justify-between px-4 md:px-10 py-4 min-h-[76px]">
+            <div className="container-x flex items-center justify-between px-4 md:px-10 py-4 min-h-[96px]">
                 <a
   href="#home"
   data-testid="navbar-logo"
