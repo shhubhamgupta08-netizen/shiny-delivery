@@ -6,16 +6,16 @@ import {
 } from "../data/content";
 
 export default function Hero() {
-  const [videoUrl, setVideoUrl] = useState(
-  window.innerWidth < 768 ? "/hero-mobile.mp4" : "/hero-desktop.mp4"
-);
+  const [videoUrl, setVideoUrl] = useState("/hero-desktop.mp4");
+
+useEffect(() => {
+  const mobileVideo =
+    window.innerWidth < 768 ? "/hero-mobile.mp4" : "/hero-desktop.mp4";
+
+  setVideoUrl(mobileVideo);
+}, []);
   const [adminOpen, setAdminOpen] = useState(false);
   const fileRef = useRef(null);
-
-  useEffect(() => {
-    const stored = localStorage.getItem("instashiny_hero_video");
-    if (stored) setVideoUrl(stored);
-  }, []);
 
   const handleUrl = (e) => {
     e.preventDefault();
