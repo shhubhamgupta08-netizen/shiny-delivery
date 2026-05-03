@@ -6,7 +6,9 @@ import {
 } from "../data/content";
 
 export default function Hero() {
-  const [videoUrl, setVideoUrl] = useState(DEFAULT_HERO_VIDEO);
+  const [videoUrl, setVideoUrl] = useState(
+  window.innerWidth < 768 ? "/hero-mobile.mp4" : "/hero-desktop.mp4"
+);
   const [adminOpen, setAdminOpen] = useState(false);
   const fileRef = useRef(null);
 
