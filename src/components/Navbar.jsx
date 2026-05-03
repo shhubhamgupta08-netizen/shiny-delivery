@@ -39,7 +39,7 @@ export default function Navbar() {
   <img
     src="/logo.png"
     alt="InstaShiny"
-    className="h-17 md:h-19 w-auto object-contain"
+    className="h-15 md:h-17 w-auto object-contain"
   />
 
   <div className="hidden sm:block leading-tight">
