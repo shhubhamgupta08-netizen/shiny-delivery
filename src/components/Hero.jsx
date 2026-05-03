@@ -1,27 +1,26 @@
 import React, { useEffect, useRef, useState } from "react";
 import BookingCard from "./BookingCard";
-import {
-  DEFAULT_HERO_VIDEO,
-  HERO_FALLBACK_IMAGE
-} from "../data/content";
+import { HERO_FALLBACK_IMAGE } from "../data/content";
 
 export default function Hero() {
   const [videoUrl, setVideoUrl] = useState("/hero-desktop.mp4");
-
-useEffect(() => {
-  const mobileVideo =
-    window.innerWidth < 768 ? "/hero-mobile.mp4" : "/hero-desktop.mp4";
-
-  setVideoUrl(mobileVideo);
-}, []);
   const [adminOpen, setAdminOpen] = useState(false);
   const fileRef = useRef(null);
+
+  useEffect(() => {
+    const selectedVideo =
+      window.innerWidth < 768
+        ? "/hero-mobile.mp4"
+        : "/hero-desktop.mp4";
+
+    setVideoUrl(selectedVideo);
+  }, []);
 
   const handleUrl = (e) => {
     e.preventDefault();
     const url = e.target.elements.url.value.trim();
+
     if (url) {
-      localStorage.setItem("instashiny_hero_video", url);
       setVideoUrl(url);
       setAdminOpen(false);
     }
@@ -30,6 +29,7 @@ useEffect(() => {
   const handleFile = (e) => {
     const file = e.target.files?.[0];
     if (!file) return;
+
     const blobUrl = URL.createObjectURL(file);
     setVideoUrl(blobUrl);
   };
@@ -38,7 +38,7 @@ useEffect(() => {
     <section
       id="home"
       data-testid="hero-section"
-    className="relative min-h-[75vh] md:min-h-[85vh] w-full overflow-hidden flex items-start justify-center pt-6 md:pt-12"
+      className="relative min-h-[75vh] md:min-h-[85vh] w-full overflow-hidden flex items-start justify-center pt-6 md:pt-12"
     >
       {videoUrl && (
         <video
@@ -57,7 +57,7 @@ useEffect(() => {
       <div
         className="absolute inset-0 z-10 bg-cover bg-center"
         style={{
-          backgroundImage: `url(${HERO_FALLBACK_IMAGE})`
+          backgroundImage: `url(${HERO_FALLBACK_IMAGE})`,
         }}
       />
 
@@ -82,24 +82,25 @@ useEffect(() => {
             </h1>
 
             <p className="mt-6 text-base md:text-lg text-white/85 max-w-xl">
-              Premium laundry care with instant pickup, live tracking and same-day delivery.
+              Premium laundry care with instant pickup, live tracking and
+              same-day delivery.
             </p>
 
             <div className="mt-6 flex flex-wrap gap-4 items-center">
-  <a
-    href="#how"
-    className="px-6 py-3 rounded-full bg-white text-[#0B2A6B] font-semibold shadow-md"
-  >
-    See How It Works
-  </a>
+              <a
+                href="#how"
+                className="px-6 py-3 rounded-full bg-white text-[#0B2A6B] font-semibold shadow-md"
+              >
+                See How It Works
+              </a>
 
-  <a
-    href="#services"
-    className="px-6 py-3 rounded-full bg-white/15 backdrop-blur-md border border-white/30 text-white font-semibold shadow-md"
-  >
-    View Pricing
-  </a>
-</div>
+              <a
+                href="#services"
+                className="px-6 py-3 rounded-full bg-white/15 backdrop-blur-md border border-white/30 text-white font-semibold shadow-md"
+              >
+                View Pricing
+              </a>
+            </div>
 
             <div className="mt-8 flex flex-wrap gap-4 text-sm">
               <span>⭐ 4.9/5 Rating</span>
