@@ -34,7 +34,7 @@ export default function Navbar() {
                 <a
   href="#home"
   data-testid="navbar-logo"
-  className="flex items-center gap-3.5"
+  className="flex items-center gap-3"
 >
   <img
     src="/logo.png"
