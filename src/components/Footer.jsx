@@ -61,12 +61,28 @@ export default function Footer() {
       <div className="absolute -top-40 left-1/4 w-[560px] h-[560px] rounded-full bg-[#007BFF]/15 blur-[120px]" />
       <div className="absolute bottom-0 right-0 w-[500px] h-[500px] rounded-full bg-[#0A2540]/70 blur-[140px]" />
 
+      {/* Watermark */}
+<div
+  aria-hidden="true"
+  className="absolute inset-x-0 bottom-[-20px] flex justify-center pointer-events-none select-none overflow-hidden z-0"
+>
+  <span
+    className="text-[18vw] md:text-[14vw] font-black text-white/[0.04] whitespace-nowrap"
+    style={{
+      letterSpacing: "-0.04em",
+      fontWeight: 900,
+    }}
+  >
+    InstaShiny
+  </span>
+</div>
+      
       <div className="relative z-10 container-x px-6 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div>
             <img
-              src="/logo.png"
+              src="/logo1.png"
               alt="InstaShiny"
               className="h-14 w-auto"
             />
