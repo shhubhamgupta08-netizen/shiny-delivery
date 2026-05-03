@@ -93,7 +93,7 @@ export default function Hero() {
 
   <a
     href="#services"
-    className="px-6 py-3 rounded-full border border-white/40 text-white font-semibold bg-white/10 backdrop-blur-md"
+    className="px-6 py-3 rounded-full bg-white/15 backdrop-blur-md border border-white/30 text-white font-semibold shadow-md"
   >
     View Pricing
   </a>
