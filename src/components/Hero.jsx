@@ -51,8 +51,8 @@ export default function Hero() {
           <source
   src={
     window.innerWidth < 768
-      ? "/src/Assets/hero-mobile.mp4"
-      : "/src/Assets/hero-desktop.mp4"
+      ? "/hero-mobile.mp4"
+      : "/hero-desktop.mp4"
   }
   type="video/mp4"
 />
