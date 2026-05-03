@@ -111,7 +111,7 @@ export const TESTIMONIALS = [
     verified: true
   },
   {
-    name: "hemant",
+    name: "Hemant Singh",
     review: "excellent services, courteous staff, light fasr delivery!",
     rating: 5,
     verified: true
@@ -123,7 +123,7 @@ export const TESTIMONIALS = [
     verified: true
   },
   {
-    name: "swapnil",
+    name: "Swapnil",
     review: "easy booking, reliable pickup & delivery!",
     rating: 5,
   },
