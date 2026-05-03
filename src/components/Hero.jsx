@@ -48,14 +48,7 @@ export default function Hero() {
           playsInline
           poster={HERO_FALLBACK_IMAGE}
         >
-          <source
-  src={
-    window.innerWidth < 768
-      ? "/hero-mobile.mp4"
-      : "/hero-desktop.mp4"
-  }
-  type="video/mp4"
-/>
+          <source src={videoUrl} type="video/mp4" />
         </video>
       )}
 
