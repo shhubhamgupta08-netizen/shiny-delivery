@@ -34,12 +34,12 @@ export default function Navbar() {
                 <a
   href="#home"
   data-testid="navbar-logo"
-  className="flex items-center gap-3"
+  className="flex items-center gap-4"
 >
   <img
     src="/logo.png"
     alt="InstaShiny"
-    className="h-9 md:h-12 w-auto object-contain"
+    className="h-14 md:h-16 w-auto object-contain"
   />
 
   <div className="hidden sm:block leading-tight">
