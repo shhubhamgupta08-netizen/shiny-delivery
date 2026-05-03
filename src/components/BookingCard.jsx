@@ -20,7 +20,7 @@ export default function BookingCard() {
         <form
             onSubmit={handleBook}
             data-testid="hero-booking-card"
-            className="glass-card rounded-[20px] p-6 md:p-7 w-full max-w-md shadow-2xl"
+            className="bg-white/80 backdrop-blur-xl border border-white/40 rounded-[20px] p-6 md:p-7 w-full max-w-md shadow-2xl"
         >
             <div className="flex items-center justify-between mb-5">
                 <div>
@@ -80,6 +80,7 @@ export default function BookingCard() {
                         onChange={(e) => setTime(e.target.value)}
                         data-testid="booking-time-select"
                     >
+                        <option>10:00 AM - 11:00 AM</option>
                         <option>11:00 AM – 12:00 PM</option>
                         <option>1:00 PM – 2:00 PM</option>
                         <option>4:00 PM – 5:00 PM</option>
